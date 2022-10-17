@@ -1,0 +1,14 @@
+{
+  "name": "hvls",
+  "version": "1.0.0",
+  "description": "HTML validator live-server",
+  "scripts": {
+    "dev": "run-p -c server watch:validate:html validate:html",
+    "server": "live-server --port=3000 --no-browser",
+    "validate:html": "html-validate index.html",
+    "watch:validate:html": "onchange 'index.html' -- npm run validate:html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
