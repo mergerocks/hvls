@@ -7,7 +7,7 @@
 
 ### Install packages globaly! ONCE!
 ```bash
-npm install -g onchange live-server html-validate npm-run-all
+npm install -g onchange live-server html-validate concurrently
 ```
 <hr>
 <br>
