@@ -11,7 +11,6 @@ npm install -g onchange live-server html-validate
 ```
 <hr>
 <br>
-<br>
 
 ### Create new project (new folder)
 ```bash
@@ -22,6 +21,8 @@ or
 ```bash
 npx degit mergerocks/hvls .
 ```
+
+<br>
 
 ### Development (open in browser http://localhost:3000)
 ```bash
