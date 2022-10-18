@@ -4,20 +4,22 @@
 <br>
 
 <hr>
+<hr>
 
-### Install packages globaly! ONCE!
+### Install packages globaly! ONCE! Don't do it next time!
 ```bash
-npm install -g onchange live-server html-validate concurrently
+npm run once
 ```
+<hr>
 <hr>
 <br>
 
-### Create new project (new folder)
+### Create new project (new folder, for example "homework-1")
 ```bash
-npx degit mergerocks/hvls <project-name>
+npx degit mergerocks/hvls homework-1
 ```
 or
-### Create new project (existing folder)
+### Create new project (in existing folder)
 ```bash
 npx degit mergerocks/hvls .
 ```

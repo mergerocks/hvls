@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "HTML validator live-server",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run watch:validate:html\"",
+    "dev": "concurrently --names \"SERVER,HTML,HTML\" -c \"bgBlue.bold,bgMagenta.bold,bgMagenta.bold\" \"npm run server\" \"npm run watch:validate:html\" \"npm run validate:html\"",
     "server": "live-server --port=3000 --no-browser",
     "validate:html": "html-validate index.html",
-    "watch:validate:html": "onchange 'index.html' -- npm run validate:html"
+    "watch:validate:html": "onchange \"index.html\" -- npm run validate:html",
+    "once": "npm install -g onchange live-server html-validate concurrently"
   },
   "keywords": [],
   "author": "",
